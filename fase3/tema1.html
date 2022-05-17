@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño web II</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logoUnad.png" alt="Logo de la universidad UNAD" >
+        <h1>Diseño de sitios web: Flexbox, listas y enlaces</h1>
+    </header>
+    <div class="menu">
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul class="menu-vertical">
+                        <li><a href="tema1.html">Flexbox</a></li>
+                        <li><a href="tema2.html">Listas/Enlaces</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos digitales</a>
+                    <ul class="menu-vertical">
+                        <li><a href="recurso1.html">Recurso 1</a></li>
+                        <li><a href="recurso2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aprendizaje</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Actividad 1</a></li>
+                        <li><a href="#">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autor.html">Acerca de</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Autor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>
+
+    <div class="contenedor">
+        <div class="secciones">
+            <section>
+                <article>
+                    <h2>Flexbox</h2>
+                    <p>Uso de flexbox: Usado en Hojas de estilo en cascada CSS; es creado para mejorar la forma en que se hace un diseño responsivo del sitio
+                        evitando el continuo uso de float, reduciendo la cantidad de lineas de codigo y facilitiando
+                        el posicionamiento de los elementos (alterando, alto y distribución de elementos), optimiza el espacio disponible.
+                    </p>
+                    <p>
+                        La estructura Flexbox, se compone de contendores padre e hijos:
+                        El <strong>contenedor-Flex</strong> es el contenedor padre, contiene las direcciones que definen origen y fin del flujo de elementos
+                        hijos que se desean posicionar
+                        El <strong>elemento-flex</strong> es el elemento hijo, útiliza el espacio disponible para ubicarse de acuerdo a las propiedades
+                        y ejes (horizontal y vertical) a los cuales está sometido.
+                    </p>
+                    <p>
+                        <strong>Propiedades: </strong> Para usar Flexbox se debe iniciar definiendo la propiedad "display: flex" en el contenedor padre:
+                        <ul>
+                            <li><strong>flex-direction:</strong> define el eje principal y secundario de elemento hijo, puede ser: row, row-reverse, column, column-reverse</li>
+                            <li><strong>flex-wrap:</strong> por defecto flex, dispone los elementos en una misma línea, pero si se usa wrap se puede ordenar los elementos en más de una fila o columna; puede ser: nowrap, wrap, wrap-reverse</li>
+                            <li><strong>justify-content:</strong> da direccionamiento horizontal a los elementos hijos; puede ser: strech, flex-start, flex-end, center, space-between, space-around y space-evenly</li>
+                            <li><strong>align-items:</strong> da direccionamiento vertical a los elementos hijos; puede ser: flex-start, flex-end, center, strech y baseline</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>Nota 1:</strong> Las dos propiedades - flex-direction y flex-wrap - combinadas, se reducen a una propiedad - flex-flow -, la cual el valor de las dos primeras propiedades, separadas por un espacio, ejemplo: <br>  
+                        <code>
+                            {<br>
+                                &nbsp&nbsp display:flex; <br>
+                                &nbsp&nbsp flex-flow:column wrap; <br>
+                            }
+                        </code>
+                        <br><br>
+                        <strong>Nota 2:</strong> Align-content determina el espacio entre las líneas, mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando hay solo una línea, align-content no tiene efecto.
+                    </p>
+                    <img src="img/flexbox1.png" alt="referencia a Flexbox" width="550" height="300">
+                    <br>
+                    <q>Cabrera G. (2020). <i>Flexbox - ¿Qué es y para qué sirve?.</i> Desde <a href="https://somospnt.com/blog/148-flexbox-que-es-y-para-que-sirve">https://somospnt.com/blog/148-flexbox-que-es-y-para-que-sirve</a></q>
+                    <br>
+                </article>
+            </section>
+
+            <aside>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </aside>
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <footer>
+            <p>Correo del autor: alepaez14@hotmail.com</p>
+            <p>Skype: Cualexandro</p>
+            <p>Fecha de actualización: 17 mayo 2022</p>
+        </footer>
+    </div>
+
+</body>
+</html>
