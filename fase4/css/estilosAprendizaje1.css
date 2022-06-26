@@ -1,0 +1,43 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    background: #F1F0C0;
+}
+
+.logo{
+    height: 100px;
+    padding: 5px;
+    margin: 5px 10px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.titulo-logo{
+    font-size: 2.5rem;
+}
+
+.navbar-nav.navbar-center{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nav-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.contenido-principal{
+    padding-top:20px;
+    padding-bottom:15px;
+}
+
+footer{
+    background-color:#93ABD4;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content:space-around;
+}

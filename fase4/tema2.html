@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño web II</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logoUnad.png" alt="Logo de la universidad UNAD" >
+        <h1>Diseño de sitios web: Flexbox, listas y enlaces</h1>
+    </header>
+    <div class="menu">
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul class="menu-vertical">
+                        <li><a href="tema1.html">Flexbox</a></li>
+                        <li><a href="tema2.html">Listas/Enlaces</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos digitales</a>
+                    <ul class="menu-vertical">
+                        <li><a href="recurso1.html">Recurso 1</a></li>
+                        <li><a href="recurso2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aprendizaje</a>
+                    <ul class="menu-vertical">
+                        <li><a href="aprendizaje1.html">Aprendizaje 1</a></li>
+                        <li><a href="aprendizaje2.html">Aprendizaje 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Acerca de</a>
+                    <ul class="menu-vertical">
+                        <li><a href="autor.html">Autor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>
+
+    <div class="contenedor">
+        <div class="secciones">
+            <section>
+                <article>
+                    <h2>Listas</h2>
+                    <p>Uso de las listas: permite crear un conjunto de elementos en forma de lista dentro de la página, precedidos por una viñeta o número</p>
+                    <p><strong>Tipos de listas:</strong>
+                        <ul>
+                            <li><strong>Listas ordenadas: </strong>muestran los elementos de la lista en orden numérico, alfabético o romano, puede empezar por defecto en número definido usando propiedad start="5", también se puede cambiar el tipo de viñea a alfabética con la propiedad type="A" o por números romanos type="i"</li>
+                            <ol>
+                                <li>Mariana</li>
+                                <li>Stephani</li>
+                                <li>Melissa</li>
+                                <li>Camilo</li>
+                            </ol>
+                            <li><strong>Listas desordenadas: </strong>elementos precedidos por una viñeta (punto, cuadro, asterísco), sin orden</li>
+                            <li><strong>Listas de definición: </strong>permiten montar listas en las que se tiene una estructura de valor-definición, se constituyen mediante el elemento dl. Dentro del elemento de las listas de definición, tenemos 2 elementos anidados, el valor dt y la definición dd. La estructura queda:</li>
+                            <dl>
+                                <dt>Pizpireta</dt>
+                                <dd>Que es simpática y de carácter vivaz y alegre</dd>
+                                <dt>Pupular</dt>
+                                <dd>Moverse de un lado para otro, bullir en algún lugar personas, animales o cosas</dd>
+                                <dt>Oxímoron</dt>
+                                <dd>Figura retórica de pensamiento que consiste en complementar una palabra con otra que tiene un significado contradictorio u opuesto.</dd>
+                            </dl>
+                        </ul>
+                    </p>
+                    <br>
+                    <img src="img/listas1.png" alt="imágen referente a las listas en html" width="250" height="150">
+                    <br>
+                    <q>Manual Web (2021). <i>Listas HTML.</i> Desde <a href="https://www.manualweb.net/html/listas-html/">https://www.manualweb.net/html/listas-html/</a></q>
+                    <br>
+                    <br>
+
+                    <h2>Enlaces</h2>
+                    <p>Uso de los enlaces: Comunicar una página con otra, para indicar el destino de un enlace se usa el atributo href="" dentro del elemento ancla a, este atributo puede
+                        ser cualquier URI que represente un recurso, es decir, una página, una URL genérica, un archivo, un bloque interno a la página.
+                    </p>
+                    <p><strong>Destino del enlace: </strong>El destino del enlace se especifica con el atributo target (Ej: href="google.com" target="_blank") y son: 
+                        <ul>
+                            <li><strong>_blank:</strong>abre el enlace en una ventana nueva</li>
+                            <li><strong>_self:</strong>abre el enlace en la página actual</li>
+                            <li><strong>_parent:</strong>abre el enlace en el framset superior al que se encuentra la página (el enlace está en el área de frames)</li>
+                            <li><strong>_top:</strong>abre el enlace en la ventana padre</li>
+                        </ul>
+                    </p>
+                    <p>la etiqueta a (ancla) también ofrece un atributo título (title="") para describir de forma textual el destino del enlace</p>            
+                    <br>
+                    <img src="img/enlaces1.png" alt="imágen referente a los enlaces en html" width="500" height="300"><br>
+                    <q>Manual Web (2021). <i>Enlaces HTML.</i> Desde <a href="https://www.manualweb.net/html/enlaces-html/">https://www.manualweb.net/html/enlaces-html/</a></q>
+                </article>
+            </section>
+
+            <aside>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </aside>
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <footer>
+            <p>Correo del autor: alepaez14@hotmail.com</p>
+            <p>Skype: Cualexandro</p>
+            <p>Fecha de actualización: 17 mayo 2022</p>
+        </footer>
+    </div>
+
+</body>
+</html>
